@@ -1,0 +1,19 @@
+{
+  "name": "smtp-email-verifier",
+  "version": "1.0.0",
+  "description": "SMTP email verification service",
+  "main": "smtp-verifier.js",
+  "scripts": {
+    "start": "node smtp-verifier.js",
+    "dev": "nodemon smtp-verifier.js"
+  },
+  "keywords": ["smtp", "email", "verification"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
