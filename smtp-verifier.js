@@ -9,6 +9,17 @@ app.use(express.json());
 // Secret key for authentication
 const API_KEY = process.env.VERIFIER_API_KEY || 'your-secret-key';
 
+app.get('/', (req, res) => {
+  res.json({ 
+    status: 'running',
+    message: 'SMTP Email Verifier API',
+    version: '1.0.0',
+    endpoints: {
+      verify: 'POST /verify'
+    }
+  });
+});
+
 app.post('/verify', async (req, res) => {
   // Authenticate request
   if (req.headers['x-api-key'] !== API_KEY) {
