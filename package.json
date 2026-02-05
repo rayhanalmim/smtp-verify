@@ -4,8 +4,8 @@
   "description": "SMTP email verification service",
   "main": "smtp-verifier.js",
   "scripts": {
-    "start": "node smtp-verifier.js",
-    "dev": "nodemon smtp-verifier.js"
+    "start": "node api.js && node smtp-verifier.js",
+    "dev": "node api.js && nodemon smtp-verifier.js"
   },
   "keywords": [
     "smtp",

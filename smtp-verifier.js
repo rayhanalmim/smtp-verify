@@ -30,6 +30,8 @@ app.post('/verify', async (req, res) => {
   const { email, from_email } = req.body;
   const [localPart, domain] = email.split('@');
 
+  console.log('All of the peramiter:  ', email , from_email, req.headers );
+
   try {
     // Get MX records
     const mxRecords = await dns.resolveMx(domain);
