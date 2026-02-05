@@ -75,4 +75,4 @@ function smtpVerify(email, mxHost, fromEmail) {
   });
 }
 
-app.listen(3000, () => console.log('SMTP Verifier running on port 3000'));
+app.listen(7002, () => console.log('SMTP Verifier running on port 7002'));
