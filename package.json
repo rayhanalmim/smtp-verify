@@ -7,10 +7,15 @@
     "start": "node smtp-verifier.js",
     "dev": "nodemon smtp-verifier.js"
   },
-  "keywords": ["smtp", "email", "verification"],
+  "keywords": [
+    "smtp",
+    "email",
+    "verification"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "express": "^4.18.2"
   },
   "devDependencies": {

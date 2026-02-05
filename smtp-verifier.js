@@ -1,4 +1,5 @@
 // smtp-verifier.js - Run on your VPS with port 25 open
+require('dotenv').config();
 const express = require('express');
 const net = require('net');
 const dns = require('dns').promises;
